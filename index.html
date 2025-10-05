@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gym Bro - Фитнес-клуб</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Верхняя панель с контактами -->
+    <div class="top-bar">
+        <div class="container">
+            <div class="top-contact">
+                <span><i class="fas fa-phone"></i> +7 (999) 123-45-67</span>
+                <span><i class="fas fa-map-marker-alt"></i> г. Москва, ул. Фитнесная, 15</span>
+                <span><i class="far fa-clock"></i> Пн-Пт: 7:00 - 23:00, Сб-Вс: 8:00 - 22:00</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Шапка -->
+    <header id="header">
+        <div class="container header-container">
+            <div class="logo">
+                <img src="gymbro.jpg" >
+                
+            </div>
+            <nav>
+                <button class="mobile-menu-btn">☰</button>
+                <ul id="nav-menu">
+                    <li><a href="#home">Главная</a></li>
+                    <li><a href="#facts">О нас</a></li>
+                    <li><a href="#membership">Клубная карта</a></li>
+                    <li><a href="#services">Услуги</a></li>
+                    <li><a href="#gallery">Галерея</a></li>
+                    <li><a href="#schedule">Расписание</a></li>
+                    <li><a href="#contact">Контакты</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Мобильное меню -->
+    <div class="mobile-menu" id="mobileMenu">
+        <button class="close-btn">&times;</button>
+        <ul>
+            <li><a href="#home">Главная</a></li>
+            <li><a href="#facts">О нас</a></li>
+            <li><a href="#membership">Клубная карта</a></li>
+            <li><a href="#services">Услуги</a></li>
+            <li><a href="#gallery">Галерея</a></li>
+            <li><a href="#schedule">Расписание</a></li>
+            <li><a href="#contact">Контакты</a></li>
+        </ul>
+    </div>
+
+    <!-- Слайд-шоу -->
+    <section class="slider" id="home">
+        <div class="slides">
+            <div class="slide" style="background-image: url('https://images.unsplash.com/photo-1534438327276-14e5300c3a48?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');">
+                <div class="slide-content">
+                    <h2>Современный фитнес-клуб</h2>
+                    <p>Лучшее оборудование и профессиональные тренеры для достижения ваших целей</p>
+                    <a href="#membership" class="btn">Присоединиться</a>
+                </div>
+            </div>
+            <div class="slide" style="background-image: url('https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');">
+                <div class="slide-content">
+                    <h2>Персональные тренировки</h2>
+                    <p>Индивидуальный подход к каждому клиенту для максимальных результатов</p>
+                    <a href="#services" class="btn">Узнать больше</a>
+                </div>
+            </div>
+            <div class="slide" style="background-image: url('https://images.unsplash.com/photo-1571902943202-507ec2618e8f?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');">
+                <div class="slide-content">
+                    <h2>Групповые занятия</h2>
+                    <p>Йога, пилатес, функциональный тренинг и многое другое</p>
+                    <a href="#schedule" class="btn">Посмотреть расписание</a>
+                </div>
+            </div>
+        </div>
+        <div class="slider-nav">
+            <div class="slider-dot active" data-slide="0"></div>
+            <div class="slider-dot" data-slide="1"></div>
+            <div class="slider-dot" data-slide="2"></div>
+        </div>
+    </section>
+
+    <!-- Факты о зале -->
+    <section class="facts" id="facts">
+        <div class="container">
+            <h2>Факты о нашем клубе</h2>
+            <div class="facts-grid">
+                <div class="fact-card">
+                    <div class="fact-icon">
+                        <i class="fas fa-dumbbell"></i>
+                    </div>
+                    <div class="fact-number">150+</div>
+                    <div class="fact-text">Единиц современного оборудования</div>
+                </div>
+                <div class="fact-card">
+                    <div class="fact-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <div class="fact-number">2000+</div>
+                    <div class="fact-text">Довольных клиентов</div>
+                </div>
+                <div class="fact-card">
+                    <div class="fact-icon">
+                        <i class="fas fa-trophy"></i>
+                    </div>
+                    <div class="fact-number">5+</div>
+                    <div class="fact-text">Лет успешной работы</div>
+                </div>
+                <div class="fact-card">
+                    <div class="fact-icon">
+                        <i class="fas fa-user-tie"></i>
+                    </div>
+                    <div class="fact-number">10+</div>
+                    <div class="fact-text">Профессиональных тренеров</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Клубная карта -->
+    <section class="membership" id="membership">
+        <div class="container">
+            <h2>Клубная карта</h2>
+            <div class="membership-content">
+                <p>Станьте частью нашего сообщества и получите доступ ко всем возможностям клуба без ограничений</p>
+                <div class="membership-features">
+                    <div class="membership-feature">
+                        <i class="fas fa-check"></i>
+                        <span>Неограниченный доступ в тренажерный зал</span>
+                    </div>
+                    <div class="membership-feature">
+                        <i class="fas fa-check"></i>
+                        <span>Все групповые занятия включены</span>
+                    </div>
+                    <div class="membership-feature">
+                        <i class="fas fa-check"></i>
+                        <span>Персональная консультация тренера</span>
+                    </div>
+                    <div class="membership-feature">
+                        <i class="fas fa-check"></i>
+                        <span>Скидка 20% на дополнительные услуги</span>
+                    </div>
+                </div>
+                <a href="#contact" class="btn">Оформить карту</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Услуги -->
+    <section class="services" id="services">
+        <div class="container">
+            <h2>Наши услуги</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-image">
+                        <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Персональные тренировки">
+                    </div>
+                    <div class="service-content">
+                        <h3>Персональные тренировки</h3>
+                        <p>Индивидуальный подход к каждому клиенту с разработкой персональной программы тренировок и питания.</p>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="service-image">
+                        <img src="https://images.unsplash.com/photo-1571902943202-507ec2618e8f?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Групповые занятия">
+                    </div>
+                    <div class="service-content">
+                        <h3>Групповые занятия</h3>
+                        <p>Йога, пилатес, функциональный тренинг, танцы и многое другое в группах до 15 человек.</p>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="service-image">
+                        <img src="https://images.unsplash.com/photo-1583454110551-21f2fa2afe61?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Зона кросфита">
+                    </div>
+                    <div class="service-content">
+                        <h3>Зона кросфита</h3>
+                        <p>Современное оборудование для функционального тренинга и высокоинтенсивных интервальных тренировок.</p>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="service-image">
+                        <img src="https://images.unsplash.com/photo-1540497077202-7c8a3999166f?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Кардио-зона">
+                    </div>
+                    <div class="service-content">
+                        <h3>Кардио-зона</h3>
+                        <p>Современные кардиотренажеры: беговые дорожки, эллипсоиды, велотренажеры и гребные тренажеры.</p>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="service-image">
+                        <img src="https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Йога и пилатес">
+                    </div>
+                    <div class="service-content">
+                        <h3>Йога и пилатес</h3>
+                        <p>Занятия для развития гибкости, силы и баланса под руководством опытных инструкторов.</p>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="service-image">
+                        <img src="https://images.unsplash.com/photo-1574680178050-55c6a6a96e0a?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Фитнес-тестирование">
+                    </div>
+                    <div class="service-content">
+                        <h3>Фитнес-тестирование</h3>
+                        <p>Комплексная оценка физического состояния и консультация по дальнейшим тренировкам.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Галерея -->
+    <section class="gallery" id="gallery">
+        <div class="container">
+            <h2>Наш зал</h2>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Тренажерный зал">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1540497077202-7c8a3999166f?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Кардио-зона">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1583454110551-21f2fa2afe61?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Зона кросфита">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Зона свободных весов">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Расписание -->
+    <section class="schedule" id="schedule">
+        <div class="container">
+            <h2>Расписание тренировок</h2>
+            <div class="schedule-container">
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Время</th>
+                        <th>Понедельник</th>
+                        <th>Вторник</th>
+                        <th>Среда</th>
+                        <th>Четверг</th>
+                        <th>Пятница</th>
+                        <th>Суббота</th>
+                        <th>Воскресенье</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>7:00 - 8:00</td>
+                        <td><span class="class-type">Йога</span></td>
+                        <td><span class="class-type">Пилатес</span></td>
+                        <td><span class="class-type">Йога</span></td>
+                        <td><span class="class-type">Пилатес</span></td>
+                        <td><span class="class-type">Йога</span></td>
+                        <td><span class="class-type">Стретчинг</span></td>
+                        <td><span class="class-type">Йога</span></td>
+                    </tr>
+                    <tr>
+                        <td>9:00 - 10:00</td>
+                        <td><span class="class-type">Функциональный тренинг</span></td>
+                        <td><span class="class-type">Силовая тренировка</span></td>
+                        <td><span class="class-type">Функциональный тренинг</span></td>
+                        <td><span class="class-type">Силовая тренировка</span></td>
+                        <td><span class="class-type">Функциональный тренинг</span></td>
+                        <td><span class="class-type">Кроссфит</span></td>
+                        <td><span class="class-type">Кроссфит</span></td>
+                    </tr>
+                    <tr>
+                        <td>18:00 - 19:00</td>
+                        <td><span class="class-type">Силовая тренировка</span></td>
+                        <td><span class="class-type">Кроссфит</span></td>
+                        <td><span class="class-type">Силовая тренировка</span></td>
+                        <td><span class="class-type">Кроссфит</span></td>
+                        <td><span class="class-type">Силовая тренировка</span></td>
+                        <td>-</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td>19:30 - 20:30</td>
+                        <td><span class="class-type">Пилатес</span></td>
+                        <td><span class="class-type">Стретчинг</span></td>
+                        <td><span class="class-type">Пилатес</span></td>
+                        <td><span class="class-type">Стретчинг</span></td>
+                        <td><span class="class-type">Пилатес</span></td>
+                        <td>-</td>
+                        <td>-</td>
+                    </tr>
+                </tbody>
+            </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- Контакты -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <h2>Контакты</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">📍</div>
+                        <div>
+                            <h3>Адрес</h3>
+                            <p>г. Москва, ул. Фитнесная, 15</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">📞</div>
+                        <div>
+                            <h3>Телефон</h3>
+                            <p>+7 (999) 123-45-67</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">✉️</div>
+                        <div>
+                            <h3>Email</h3>
+                            <p>info@gymbro.ru</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">🕒</div>
+                        <div>
+                            <h3>Время работы</h3>
+                            <p>Пн-Пт: 7:00 - 23:00</p>
+                            <p>Сб-Вс: 8:00 - 22:00</p>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-vk"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-telegram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Ваше имя</label>
+                            <input type="text" id="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Телефон</label>
+                            <input type="tel" id="phone" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Сообщение</label>
+                            <textarea id="message" placeholder="Расскажите о ваших целях..."></textarea>
+                        </div>
+                        <button type="submit" class="btn">Отправить заявку</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Подвал -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>Gym Bro</h3>
+                    <p>Современный фитнес-клуб с лучшим оборудованием и профессиональными тренерами.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-vk"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-telegram"></i></a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h3>Навигация</h3>
+                    <ul>
+                        <li><a href="#home">Главная</a></li>
+                        <li><a href="#facts">О нас</a></li>
+                        <li><a href="#membership">Клубная карта</a></li>
+                        <li><a href="#services">Услуги</a></li>
+                        <li><a href="#gallery">Галерея</a></li>
+                        <li><a href="#schedule">Расписание</a></li>
+                        <li><a href="#contact">Контакты</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Услуги</h3>
+                    <ul>
+                        <li><a href="#">Персональные тренировки</a></li>
+                        <li><a href="#">Групповые занятия</a></li>
+                        <li><a href="#">Кардио-тренировки</a></li>
+                        <li><a href="#">Силовые тренировки</a></li>
+                        <li><a href="#">Йога и пилатес</a></li>
+                        <li><a href="#">Фитнес-тестирование</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Контакты</h3>
+                    <ul>
+                        <li>📍 г. Москва, ул. Фитнесная, 15</li>
+                        <li>📞 +7 (999) 123-45-67</li>
+                        <li>✉️ info@gymbro.ru</li>
+                        <li>🕒 Пн-Пт: 7:00-23:00, Сб-Вс: 8:00-22:00</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Gym Bro. Все права защищены.</p>
+                <div class="footer-links">
+                <a href="privacy-policy.html">Политика конфиденциальности</a>
+                <a href="rules.html">Правила клуба</a>
+                <a href="offer.html">Договор оферты</a>
+            </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
