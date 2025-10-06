@@ -10,6 +10,7 @@ body {
     line-height: 1.6;
     color: #333;
     overflow-x: hidden;
+    background: #0a0a0a; /* Черный фон для всего сайта */
 }
 
 .container {
@@ -20,7 +21,7 @@ body {
 
 .btn {
     display: inline-block;
-    background: #ff6b00;
+    background: #d10000; /* Красный вместо оранжевого */
     color: white;
     padding: 12px 25px;
     border: none;
@@ -32,7 +33,7 @@ body {
 }
 
 .btn:hover {
-    background: #e55e00;
+    background: #b00000; /* Темнее красный при наведении */
     transform: translateY(-2px);
 }
 
@@ -44,15 +45,16 @@ h2 {
     text-align: center;
     margin-bottom: 50px;
     font-size: 36px;
-    color: #222;
+    color: #fff; /* Белый цвет заголовков */
 }
 
 /* Верхняя панель */
 .top-bar {
-    background: #222;
+    background: #000; /* Черный фон */
     color: white;
     padding: 8px 0;
     font-size: 14px;
+    border-bottom: 2px solid #d10000; /* Красная граница */
 }
 
 .top-bar .container {
@@ -74,13 +76,14 @@ h2 {
 
 /* Шапка */
 header {
-    background: white;
-    color: #333;
+    background: #000; /* Черный фон */
+    color: white;
     padding: 15px 0;
     position: sticky;
     top: 0;
     z-index: 1000;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    border-bottom: 2px solid #d10000; /* Красная граница */
 }
 
 .header-container {
@@ -89,24 +92,18 @@ header {
     align-items: center;
 }
 
-
 .logo {
     font-size: 28px;
     font-weight: bold;
-    color: #ff6b00;
+    color: white;
     display: flex;
     align-items: center;
 }
 
 .logo img {
-    height: 60px; /* Настройте под ваш логотип */
+    height: 60px;
     width: auto;
     margin-right: 10px;
-}
-
-.logo i {
-    margin-right: 10px;
-    font-size: 32px;
 }
 
 nav ul {
@@ -119,7 +116,7 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #333;
+    color: white; /* Белый цвет текста */
     text-decoration: none;
     font-weight: 500;
     transition: color 0.3s ease;
@@ -127,14 +124,14 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: #ff6b00;
+    color: #d10000; /* Красный при наведении */
 }
 
 .mobile-menu-btn {
     display: none;
     background: none;
     border: none;
-    color: #333;
+    color: white; /* Белый цвет */
     font-size: 24px;
     cursor: pointer;
 }
@@ -147,7 +144,7 @@ nav ul li a:hover {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.9);
+    background: rgba(0, 0, 0, 0.95); /* Темный фон */
     z-index: 2000;
     flex-direction: column;
     justify-content: center;
@@ -247,12 +244,17 @@ nav ul li a:hover {
 }
 
 .slider-dot.active {
-    background: white;
+    background: #d10000; /* Красный цвет активной точки */
 }
 
 /* Факты о зале */
 .facts {
-    background: #f9f9f9;
+    background: #000; /* Черный фон */
+    color: white;
+}
+
+.facts h2 {
+    color: white;
 }
 
 .facts-grid {
@@ -264,19 +266,21 @@ nav ul li a:hover {
 .fact-card {
     text-align: center;
     padding: 30px 20px;
-    background: white;
+    background: #1a1a1a; /* Темно-серый фон карточек */
     border-radius: 8px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
+    border: 1px solid #333;
 }
 
 .fact-card:hover {
     transform: translateY(-10px);
+    border-color: #d10000; /* Красная граница при наведении */
 }
 
 .fact-icon {
     font-size: 48px;
-    color: #ff6b00;
+    color: #d10000; /* Красный цвет иконок */
     margin-bottom: 20px;
 }
 
@@ -284,16 +288,16 @@ nav ul li a:hover {
     font-size: 36px;
     font-weight: bold;
     margin-bottom: 10px;
-    color: #333;
+    color: white;
 }
 
 .fact-text {
-    color: #777;
+    color: #ccc;
 }
 
 /* Клубная карта */
 .membership {
-    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('https://images.unsplash.com/photo-1534438327276-14e5300c3a48?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+    background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url('https://images.unsplash.com/photo-1534438327276-14e5300c3a48?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
     background-size: cover;
     background-position: center;
     color: white;
@@ -312,6 +316,7 @@ nav ul li a:hover {
 .membership p {
     font-size: 18px;
     margin-bottom: 30px;
+    color: #ccc;
 }
 
 .membership-features {
@@ -330,10 +335,19 @@ nav ul li a:hover {
 }
 
 .membership-feature i {
-    color: #ff6b00;
+    color: #d10000; /* Красный цвет галочек */
 }
 
 /* Услуги */
+.services {
+    background: #0a0a0a; /* Темный фон */
+    color: white;
+}
+
+.services h2 {
+    color: white;
+}
+
 .services-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -341,15 +355,17 @@ nav ul li a:hover {
 }
 
 .service-card {
-    background: white;
+    background: #1a1a1a; /* Темный фон карточек */
     border-radius: 8px;
     overflow: hidden;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
+    border: 1px solid #333;
 }
 
 .service-card:hover {
     transform: translateY(-10px);
+    border-color: #d10000; /* Красная граница при наведении */
 }
 
 .service-image {
@@ -375,11 +391,21 @@ nav ul li a:hover {
 .service-content h3 {
     margin-bottom: 10px;
     font-size: 22px;
+    color: white;
+}
+
+.service-content p {
+    color: #ccc;
 }
 
 /* Галерея */
 .gallery {
-    background: #f9f9f9;
+    background: #000; /* Черный фон */
+    color: white;
+}
+
+.gallery h2 {
+    color: white;
 }
 
 .gallery-grid {
@@ -393,6 +419,11 @@ nav ul li a:hover {
     overflow: hidden;
     border-radius: 8px;
     position: relative;
+    border: 2px solid #333;
+}
+
+.gallery-item:hover {
+    border-color: #d10000; /* Красная граница при наведении */
 }
 
 .gallery-item img {
@@ -407,41 +438,66 @@ nav ul li a:hover {
 }
 
 /* Расписание */
+.schedule {
+    background: #0a0a0a; /* Темный фон */
+    color: white;
+}
+
+.schedule h2 {
+    color: white;
+}
+
 .schedule table {
     width: 100%;
     border-collapse: collapse;
     margin-top: 20px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    min-width: 800px;
+    background: #1a1a1a; /* Темный фон таблицы */
+}
+
+.schedule-container {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    margin: 0 -20px;
+    padding: 0 20px;
 }
 
 .schedule th, .schedule td {
     padding: 15px;
     text-align: center;
-    border: 1px solid #eee;
+    border: 1px solid #333;
+    white-space: nowrap;
+    color: white;
 }
 
 .schedule th {
-    background: #ff6b00;
+    background: #d10000; /* Красный заголовок таблицы */
     color: white;
     font-weight: bold;
 }
 
 .schedule tr:nth-child(even) {
-    background: #f9f9f9;
+    background: #222;
 }
 
 .schedule tr:hover {
-    background: #f0f0f0;
+    background: #333;
 }
 
 .class-type {
     font-weight: bold;
-    color: #ff6b00;
+    color: #d10000; /* Красный цвет типа занятия */
 }
 
 /* Контакты */
 .contact {
-    background: #f9f9f9;
+    background: #000; /* Черный фон */
+    color: white;
+}
+
+.contact h2 {
+    color: white;
 }
 
 .contact-content {
@@ -464,7 +520,7 @@ nav ul li a:hover {
 }
 
 .contact-icon {
-    background: #ff6b00;
+    background: #d10000; /* Красный фон иконок */
     color: white;
     width: 40px;
     height: 40px;
@@ -496,7 +552,7 @@ nav ul li a:hover {
 }
 
 .social-links a:hover {
-    background: #ff6b00;
+    background: #d10000; /* Красный при наведении */
     transform: translateY(-3px);
 }
 
@@ -508,15 +564,18 @@ nav ul li a:hover {
     display: block;
     margin-bottom: 5px;
     font-weight: 500;
+    color: white;
 }
 
 .form-group input,
 .form-group textarea {
     width: 100%;
     padding: 12px;
-    border: 1px solid #ddd;
+    border: 1px solid #333;
     border-radius: 4px;
     font-size: 16px;
+    background: #1a1a1a;
+    color: white;
 }
 
 .form-group textarea {
@@ -526,9 +585,10 @@ nav ul li a:hover {
 
 /* Подвал */
 footer {
-    background: #222;
+    background: #000;
     color: white;
     padding: 50px 0 20px;
+    border-top: 2px solid #d10000; /* Красная граница */
 }
 
 .footer-content {
@@ -546,7 +606,7 @@ footer {
 
 .footer-column h3 {
     margin-bottom: 20px;
-    color: #ff6b00;
+    color: #d10000; /* Красный цвет заголовков */
 }
 
 .footer-column ul {
@@ -555,22 +615,23 @@ footer {
 
 .footer-column ul li {
     margin-bottom: 10px;
+    color: #ccc;
 }
 
 .footer-column ul li a {
-    color: #ddd;
+    color: #ccc;
     text-decoration: none;
     transition: color 0.3s ease;
 }
 
 .footer-column ul li a:hover {
-    color: #ff6b00;
+    color: #d10000; /* Красный при наведении */
 }
 
 .footer-bottom {
     text-align: center;
     padding-top: 20px;
-    border-top: 1px solid #444;
+    border-top: 1px solid #333;
     color: #aaa;
     font-size: 14px;
 }
@@ -589,49 +650,246 @@ footer {
 }
 
 .footer-links a:hover {
-    color: #ff6b00;
+    color: #d10000; /* Красный при наведении */
 }
-/* Расписание */
-.schedule table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 20px;
+
+/* СТИЛИ ДЛЯ ДОПОЛНИТЕЛЬНЫХ СТРАНИЦ */
+.page-content {
+    padding: 80px 0;
+    background: #0a0a0a;
+    min-height: 80vh;
+}
+
+.policy-content, .offer-content, .rules-content {
+    max-width: 900px;
+    margin: 0 auto;
+    background: #1a1a1a;
+    padding: 40px;
+    border-radius: 8px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-    min-width: 800px; /* Добавляем минимальную ширину */
-}
-
-.schedule-container {
-    overflow-x: auto; /* Добавляем горизонтальный скролл */
-    -webkit-overflow-scrolling: touch; /* Плавный скролл на iOS */
-    margin: 0 -20px; /* Компенсируем отступы контейнера */
-    padding: 0 20px; /* Добавляем отступы для скролла */
-}
-
-.schedule th, .schedule td {
-    padding: 15px;
-    text-align: center;
-    border: 1px solid #eee;
-    white-space: nowrap; /* Запрещаем перенос текста */
-}
-
-/* Остальные стили остаются без изменений */
-.schedule th {
-    background: #ff6b00;
     color: white;
+}
+
+.policy-content h1, .offer-content h1, .rules-content h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #d10000;
+}
+
+.policy-section, .offer-section, .rules-section {
+    margin-bottom: 30px;
+}
+
+.policy-section h2, .offer-section h2, .rules-section h2 {
+    text-align: left;
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: white;
+    border-bottom: 2px solid #d10000;
+    padding-bottom: 5px;
+}
+
+.policy-section p, .offer-section p, .rules-section p {
+    margin-bottom: 15px;
+    line-height: 1.8;
+    color: #ccc;
+}
+
+.policy-section ul, .offer-section ul, .rules-section ul {
+    margin-left: 20px;
+    margin-bottom: 15px;
+}
+
+.policy-section li, .offer-section li, .rules-section li {
+    margin-bottom: 8px;
+    line-height: 1.6;
+    color: #ccc;
+}
+
+.contract-info, .warning {
+    background: #222;
+    border-left: 4px solid #d10000;
+    padding: 15px;
+    margin: 20px 0;
+    color: #ccc;
+}
+
+.back-link {
+    display: inline-block;
+    margin-top: 30px;
+    color: #d10000;
+    text-decoration: none;
     font-weight: bold;
 }
 
-.schedule tr:nth-child(even) {
-    background: #f9f9f9;
+.back-link:hover {
+    text-decoration: underline;
+    color: #ff3333;
 }
 
-.schedule tr:hover {
-    background: #f0f0f0;
+/* Стили для кликабельных картинок услуг */
+.clickable-service {
+    cursor: pointer;
+    position: relative;
 }
 
-.class-type {
+.clickable-service::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(209, 0, 0, 0.1);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.clickable-service:hover::after {
+    opacity: 1;
+}
+
+.service-link {
+    display: inline-block;
+    margin-top: 15px;
+    color: #d10000;
+    text-decoration: none;
     font-weight: bold;
-    color: #ff6b00;
+    transition: color 0.3s ease;
+}
+
+.service-link:hover {
+    color: #ff3333;
+}
+
+/* Модальное окно - исправленные стили (ВЫНЕСЕНО ИЗ МЕДИА-ЗАПРОСА) */
+.modal-overlay {
+    display: none; /* Вот это ключевое изменение! */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 9999;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.modal-overlay.active {
+    display: flex; /* Показываем только когда есть класс active */
+}
+
+.modal-content {
+    background: #1a1a1a;
+    padding: 40px;
+    border-radius: 10px;
+    max-width: 500px;
+    width: 100%;
+    position: relative;
+    border: 2px solid #d10000;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+.modal-close {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-close:hover {
+    color: #d10000;
+}
+
+.modal-content h2 {
+    text-align: center;
+    margin-bottom: 10px;
+    color: #d10000;
+    font-size: 28px;
+}
+
+.modal-subtitle {
+    text-align: center;
+    color: #ccc;
+    margin-bottom: 30px;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.signup-form {
+    margin-top: 20px;
+}
+
+.checkbox-group {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    margin: 25px 0;
+}
+
+.checkbox-group input[type="checkbox"] {
+    margin-top: 3px;
+    transform: scale(1.2);
+}
+
+.checkbox-group label {
+    color: #ccc;
+    font-size: 14px;
+    line-height: 1.4;
+    text-align: left;
+}
+
+.checkbox-group a {
+    color: #d10000;
+    text-decoration: none;
+}
+
+.checkbox-group a:hover {
+    text-decoration: underline;
+}
+
+.submit-btn {
+    width: 100%;
+    padding: 15px;
+    font-size: 18px;
+    background: #d10000;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.submit-btn:hover {
+    background: #b00000;
+}
+
+/* Адаптивность для модального окна */
+@media (max-width: 768px) {
+    .modal-content {
+        padding: 30px 20px;
+        margin: 0;
+    }
+    
+    .modal-content h2 {
+        font-size: 24px;
+    }
+    
+    .modal-subtitle {
+        font-size: 14px;
+    }
 }
 
 /* Адаптивность */
@@ -652,8 +910,10 @@ footer {
 }
 
 @media (max-width: 768px) {
-   .logo img {
-        height: 30px; /* Уменьшаем логотип на мобильных */}
+    .logo img {
+        height: 40px;
+    }
+    
     .top-bar {
         display: none;
     }
@@ -694,16 +954,27 @@ footer {
     .schedule th, .schedule td {
         padding: 10px 5px;
     }
+    
     .schedule-container {
-        margin: 0 -10px; /* Уменьшаем отступы на мобильных */
+        margin: 0 -10px;
         padding: 0 10px;
     }
     
     .schedule table {
-        font-size: 12px; /* Можно уменьшить шрифт для мобильных */
+        font-size: 12px;
     }
     
     .schedule th, .schedule td {
-        padding: 8px 5px; /* Уменьшаем отступы в ячейках */
+        padding: 8px 5px;
     }
+    
+    /* Адаптивность для дополнительных страниц */
+    .policy-content, .offer-content, .rules-content {
+        padding: 20px;
+    }
+    
+    .policy-section h2, .offer-section h2, .rules-section h2 {
+        font-size: 20px;
+    }
+
 }
